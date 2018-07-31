@@ -49,3 +49,4 @@ hs_err_pid*
 /.nb-gradle/
 /pet-clinic-data/target/
 /pet-clinic-web/target/
+/pet-clinic-web/nbactions.tmp
