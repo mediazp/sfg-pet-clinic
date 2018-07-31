@@ -6,18 +6,11 @@
 package com.mediazp.edu.spring.petclinic.services;
 
 import com.mediazp.edu.spring.petclinic.data.Vet;
-import java.util.Set;
 
 /**
  *
  * @author Vlad
  */
-public interface VetService {
-
-    Vet findById(Long id);
-
-    Vet save(Vet vet);
-
-    Set<Vet> findAll();
+public interface VetService extends CrudService<Vet, Long>{
 
 }
