@@ -9,7 +9,7 @@ package com.mediazp.edu.spring.petclinic.data;
  *
  * @author Vlad
  */
-public class Person {
+public class Person extends BaseEntity {
     
     private String firstName;
     private String lastName;
