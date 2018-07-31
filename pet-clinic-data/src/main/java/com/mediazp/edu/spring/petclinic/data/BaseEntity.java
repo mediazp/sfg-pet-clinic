@@ -5,21 +5,24 @@
  */
 package com.mediazp.edu.spring.petclinic.data;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Vlad
  */
-public class PetType extends BaseEntity {
+public class BaseEntity implements Serializable {
     
-    private String name;
+    private Long id;
 
-    public String getName() {
-        return name;
+    public Long getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(Long id) {
+        this.id = id;
     }
+    
     
     
 }
