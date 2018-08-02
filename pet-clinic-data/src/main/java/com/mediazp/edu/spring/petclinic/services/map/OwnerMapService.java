@@ -12,7 +12,7 @@ import com.mediazp.edu.spring.petclinic.services.OwnerService;
  *
  * @author Vlad
  */
-public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService{
+public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Owner findByLastName(String lastName) {
