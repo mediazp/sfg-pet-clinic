@@ -24,9 +24,5 @@ public class OwnerMapService extends AbstractMapService<Owner, Long> implements 
         return null;
     }
 
-    @Override
-    public Owner save(Owner object) {
-        return super.save(object.getId(), object);
-    }
     
 }
