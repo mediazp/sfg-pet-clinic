@@ -7,11 +7,13 @@ package com.mediazp.edu.spring.petclinic.services.map;
 
 import com.mediazp.edu.spring.petclinic.data.Owner;
 import com.mediazp.edu.spring.petclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Vlad
  */
+@Service
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

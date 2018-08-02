@@ -7,11 +7,13 @@ package com.mediazp.edu.spring.petclinic.services.map;
 
 import com.mediazp.edu.spring.petclinic.data.Pet;
 import com.mediazp.edu.spring.petclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Vlad
  */
+@Service
 public class PetMapService extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
