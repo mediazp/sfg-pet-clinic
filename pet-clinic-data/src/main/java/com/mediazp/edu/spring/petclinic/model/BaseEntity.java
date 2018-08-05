@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mediazp.edu.spring.petclinic.data;
+package com.mediazp.edu.spring.petclinic.model;
 
 import java.io.Serializable;
 

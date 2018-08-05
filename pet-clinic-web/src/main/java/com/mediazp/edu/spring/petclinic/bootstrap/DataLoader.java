@@ -5,12 +5,10 @@
  */
 package com.mediazp.edu.spring.petclinic.bootstrap;
 
-import com.mediazp.edu.spring.petclinic.data.Owner;
-import com.mediazp.edu.spring.petclinic.data.Vet;
+import com.mediazp.edu.spring.petclinic.model.Owner;
+import com.mediazp.edu.spring.petclinic.model.Vet;
 import com.mediazp.edu.spring.petclinic.services.OwnerService;
 import com.mediazp.edu.spring.petclinic.services.VetService;
-import com.mediazp.edu.spring.petclinic.services.map.OwnerMapService;
-import com.mediazp.edu.spring.petclinic.services.map.VetMapService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

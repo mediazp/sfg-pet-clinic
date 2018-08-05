@@ -5,7 +5,7 @@
  */
 package com.mediazp.edu.spring.petclinic.services;
 
-import com.mediazp.edu.spring.petclinic.data.Owner;
+import com.mediazp.edu.spring.petclinic.model.Owner;
 
 /**
  *

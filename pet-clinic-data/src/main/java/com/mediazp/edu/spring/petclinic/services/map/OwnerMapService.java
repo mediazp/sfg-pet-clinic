@@ -5,7 +5,7 @@
  */
 package com.mediazp.edu.spring.petclinic.services.map;
 
-import com.mediazp.edu.spring.petclinic.data.Owner;
+import com.mediazp.edu.spring.petclinic.model.Owner;
 import com.mediazp.edu.spring.petclinic.services.OwnerService;
 import org.springframework.stereotype.Service;
 

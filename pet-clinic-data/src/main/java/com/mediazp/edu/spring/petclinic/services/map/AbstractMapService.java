@@ -5,7 +5,7 @@
  */
 package com.mediazp.edu.spring.petclinic.services.map;
 
-import com.mediazp.edu.spring.petclinic.data.BaseEntity;
+import com.mediazp.edu.spring.petclinic.model.BaseEntity;
 import com.mediazp.edu.spring.petclinic.services.CrudService;
 import java.util.Collection;
 import java.util.Collections;
