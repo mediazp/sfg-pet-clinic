@@ -18,7 +18,7 @@ import java.util.Set;
  *
  * @author Vlad
  */
-public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> {
+public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> implements CrudService<T, ID> {
 
     protected Map<Long, T> map = new HashMap<>();
 
