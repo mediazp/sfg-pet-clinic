@@ -5,23 +5,22 @@
  */
 package com.mediazp.edu.spring.petclinic.model;
 
-import java.util.Set;
-
 /**
  *
  * @author Vlad
  */
-public class Vet extends Person {
+public class Speciality extends BaseEntity {
     
-    private Set<Speciality> specialities;
+    private String description;
 
-    public Set<Speciality> getSpecialities() {
-        return specialities;
+    public String getDescription() {
+        return description;
     }
 
-    public void setSpecialities(Set<Speciality> specialities) {
-        this.specialities = specialities;
+    public void setDescription(String description) {
+        this.description = description;
     }
+    
     
     
 }
