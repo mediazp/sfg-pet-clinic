@@ -5,10 +5,12 @@
  */
 package com.mediazp.edu.spring.petclinic.services;
 
+import com.mediazp.edu.spring.petclinic.model.PetType;
+
 /**
  *
  * @author Vlad
  */
-public interface PetTypeService {
+public interface PetTypeService extends CrudService<PetType, Long>{
     
 }
