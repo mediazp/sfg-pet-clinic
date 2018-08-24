@@ -11,6 +11,6 @@ import com.mediazp.edu.spring.petclinic.model.Speciality;
  *
  * @author Vlad
  */
-public interface SpecialitiesService extends CrudService<Speciality, Long>{
+public interface SpecialityService extends CrudService<Speciality, Long>{
     
 }

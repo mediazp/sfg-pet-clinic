@@ -6,12 +6,14 @@
 package com.mediazp.edu.spring.petclinic.services.map;
 
 import com.mediazp.edu.spring.petclinic.model.Speciality;
-import com.mediazp.edu.spring.petclinic.services.SpecialitiesService;
+import com.mediazp.edu.spring.petclinic.services.SpecialityService;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Vlad
  */
-public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialitiesService{
+@Service
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService{
     
 }
