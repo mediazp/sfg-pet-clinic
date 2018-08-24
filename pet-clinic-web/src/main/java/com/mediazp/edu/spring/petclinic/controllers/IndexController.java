@@ -6,6 +6,7 @@
 package com.mediazp.edu.spring.petclinic.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -19,4 +20,10 @@ public class IndexController {
     public String index(){
         return "index";
     }
+    
+    
+    @RequestMapping({"/oups"})
+    public String oupsHandler(Model model) {
+        return "not_implemented";
+    }    
 }
