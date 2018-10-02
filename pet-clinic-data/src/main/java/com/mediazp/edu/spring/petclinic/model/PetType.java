@@ -5,10 +5,15 @@
  */
 package com.mediazp.edu.spring.petclinic.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  *
  * @author Vlad
  */
+@Entity
+@Table(name="types")
 public class PetType extends BaseEntity {
     
     private String name;
