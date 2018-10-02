@@ -50,3 +50,4 @@ hs_err_pid*
 /pet-clinic-data/target/
 /pet-clinic-web/target/
 /pet-clinic-web/nbactions.tmp
+/pet-clinic-web/nbactions.xml
