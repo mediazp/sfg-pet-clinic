@@ -7,7 +7,6 @@ package com.mediazp.edu.spring.petclinic.services.map;
 
 import com.mediazp.edu.spring.petclinic.model.PetType;
 import com.mediazp.edu.spring.petclinic.services.PetTypeService;
-import java.util.Set;
 import org.springframework.stereotype.Service;
 
 /**
