@@ -10,6 +10,7 @@ import com.mediazp.edu.spring.petclinic.model.Pet;
 import com.mediazp.edu.spring.petclinic.model.PetType;
 import com.mediazp.edu.spring.petclinic.model.Speciality;
 import com.mediazp.edu.spring.petclinic.model.Vet;
+import com.mediazp.edu.spring.petclinic.model.Visit;
 import com.mediazp.edu.spring.petclinic.services.OwnerService;
 import com.mediazp.edu.spring.petclinic.services.PetTypeService;
 import com.mediazp.edu.spring.petclinic.services.VetService;
@@ -17,6 +18,7 @@ import java.time.LocalDate;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import com.mediazp.edu.spring.petclinic.services.SpecialityService;
+import com.mediazp.edu.spring.petclinic.services.VisitService;
 
 /**
  *
@@ -29,14 +31,16 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
-
+    
     @Override
     public void run(String... args) throws Exception {
 
@@ -97,6 +101,14 @@ public class DataLoader implements CommandLineRunner {
         owner2.getPets().add(fionasCat);
 
         ownerService.save(owner2);
+        
+        Visit catVisit = new Visit();
+        catVisit.setDate(LocalDate.now());
+        catVisit.setPet(fionasCat);
+        catVisit.setDescription("sneezy kitty");
+        
+        visitService.save(catVisit);
+        
         Owner owner3 = new Owner();
         owner3.setFirstName("Fiona");
         owner3.setLastName(null);
