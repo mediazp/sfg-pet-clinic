@@ -10,6 +10,7 @@ import com.mediazp.edu.spring.petclinic.model.Pet;
 import com.mediazp.edu.spring.petclinic.services.OwnerService;
 import com.mediazp.edu.spring.petclinic.services.PetService;
 import com.mediazp.edu.spring.petclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
  * @author Vlad
  */
 @Service
+@Profile({"default","map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
 
     private final PetTypeService petTypeService;

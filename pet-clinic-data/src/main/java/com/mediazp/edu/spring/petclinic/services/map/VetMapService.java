@@ -8,6 +8,7 @@ package com.mediazp.edu.spring.petclinic.services.map;
 import com.mediazp.edu.spring.petclinic.model.Vet;
 import com.mediazp.edu.spring.petclinic.services.SpecialityService;
 import com.mediazp.edu.spring.petclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
  * @author Vlad
  */
 @Service
+@Profile({"default","map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
 
     private SpecialityService specialityService;
