@@ -51,3 +51,4 @@ hs_err_pid*
 /pet-clinic-web/target/
 /pet-clinic-web/nbactions.tmp
 /pet-clinic-web/nbactions.xml
+/pet-clinic-data/nbproject/
